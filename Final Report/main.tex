@@ -1,0 +1,148 @@
+\documentclass[12pt]{report}
+
+% Packages begin --------------------
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{blindtext}
+\usepackage{chngcntr}
+\usepackage{hyperref}
+\usepackage[titletoc]{appendix}
+\pagenumbering{roman}
+\usepackage{float}
+\graphicspath{ {figures/} }
+\usepackage[intoc, english]{nomencl}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[C]{\leftmark}
+
+\usepackage{longtable}
+
+% packages ends --------------
+
+\begin{document}
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+         \LARGE Department of Computing\\
+         \LARGE Goldsmiths, University of London\\
+        \vspace*{3.25cm}
+        \textbf {\LARGE  Inventory Check\\}
+    
+        
+        \vspace*{0.55cm}           
+        \textit{Final Report}\\
+        \vspace*{0.15cm}           
+
+        \vspace*{2cm}
+        by\\
+        \vspace*{0.25cm}   
+
+        \textbf{Hardik Ramesh\\}
+        \vspace*{0.5cm}
+        June 2020 
+        
+        \vspace*{2cm} 
+        Submitted in partial fulfillment for the degree of\\
+        \textit{Bachelor of Science} in \textit{Computer Science}
+
+        \vspace{1.5cm}
+        \setcounter{page}{0}
+    \end{center}
+\end{titlepage}
+
+% Abstract begin --------------
+\newpage
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\input{chapters/Abstract}
+
+% Abstract ends -------------
+
+% Acknowledgements begin ------------
+\newpage
+\chapter*{Acknowledgements}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+\input{chapters/Acknowledgements}
+
+% Acknowledgements ends -------------
+
+% nomenclature begin ------------
+\newpage
+\makenomenclature
+\input{chapters/nomenclature}
+\printnomenclature[1in]
+% nomenclature ends ----------------
+
+% Contents begin --------------------
+\newpage
+\addcontentsline{toc}{chapter}{Contents}
+\tableofcontents
+% Contents ends --------------------
+
+% Figures begin --------------------
+\newpage
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
+% Figures ends --------------------
+
+
+% Introduction begin ------------
+\chapter{Introduction}
+\pagenumbering{arabic}
+\input{chapters/Introduction}
+% Introduction ends ------------
+
+% Background Research begin -----------
+\chapter{Background Research}
+\input{chapters/backgroundResearch}
+% Background research ends -------------
+
+% System Design begin -----------
+\chapter{System Design}
+\input{chapters/systemdesign}
+% System design ends -------------
+
+%  Implementation begin -----------
+\chapter{Implementation}
+\input{chapters/implementation}
+% Implementation ends -------------
+
+%  Testing begin -----------
+\chapter{Testing}
+\input{chapters/testing}
+% Testing ends -------------
+
+%  Conclusion begin -----------
+\chapter{Conclusion}
+\input{chapters/conclusion}
+% conclusion ends -------------
+
+% Appendices begin ------------
+
+\begin{appendices}
+\chapter{Questionnaire/Survey Result}
+\input{appendix/A_Publicsurvey}
+
+\chapter{Gitlab program link}
+\input{appendix/B_Gitlab}
+
+\chapter{How to run the program?}
+\input{appendix/C_runprogarm}
+
+\end{appendices}
+% Appendices ends -------------
+
+
+% Bibliography begin -------------
+\newpage
+\addcontentsline{toc}{chapter}{Bibliography}
+\input{chapters/bibliography}
+% Bibliography ends ---------------
+
+\end{document}
+
