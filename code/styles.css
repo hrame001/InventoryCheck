@@ -1,0 +1,72 @@
+/* index.html*/
+.navbar-collapse{
+    padding-left: 40px;
+}
+
+#centerform {
+    width: 50%;
+    height: 400px;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 710px;
+    margin-top: 70px;
+    background-color: silver;
+}
+
+/* product.html*/
+#allproduct{
+    margin:30px;
+}
+
+#addproduct{
+    margin:30px;
+    padding-bottom: 15px;
+}
+
+#addbutton{
+    margin-top: 30px;
+}
+
+#editproduct{
+    margin:30px;
+    padding-bottom: 10px;
+}
+
+#productform{
+    margin-top: 50px;
+}
+
+#add{
+    margin-top: 30px;
+}
+
+#formrow{
+    margin-top: 20px;
+}
+
+#search{
+    margin: 20px;
+}
+
+/*Contact.php*/
+#map iframe {
+    height: 350px;
+    width: 100%;
+    border: 0;
+    margin: 0;
+}
+
+#form {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
